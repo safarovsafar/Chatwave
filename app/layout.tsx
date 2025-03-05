@@ -1,4 +1,12 @@
-import "./globals.css";
+import "./styles/globals.css";
+
+export const metadata = {
+  title: "Chatwave",
+  description: "Это мой сайт на Next.js",
+  icons: {
+    icon: "/favicon.png",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -7,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="dark:bg-black dark:text-white">
         {children}
       </body>
     </html>
